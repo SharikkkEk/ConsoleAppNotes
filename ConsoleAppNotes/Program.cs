@@ -96,11 +96,18 @@ namespace ConsoleApp1
         }
         public static void DownloadNote()
         {
-            FileStream stream = new FileStream("C:\\test.txt ", FileMode.Open);
-            StreamReader reader = new StreamReader(stream);
-            string str = reader.ReadToEnd();
-            stream.Close();
-            Notes.Add(str);
+            try
+            {
+                FileStream stream = new FileStream("C:\\test.txt ", FileMode.Open);
+                StreamReader reader = new StreamReader(stream);
+                string str = reader.ReadToEnd();
+                stream.Close();
+                Notes.Add(str);
+            }
+            catch
+            {
+                Console.WriteLine("Ошибка!!!");
+            }
         }
     }
 }
