@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppNotes", "ConsoleAppNotes\ConsoleAppNotes.csproj", "{0F7DED9F-67D8-41BD-A3B7-20409F6DF37F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F7DED9F-67D8-41BD-A3B7-20409F6DF37F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7DED9F-67D8-41BD-A3B7-20409F6DF37F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7DED9F-67D8-41BD-A3B7-20409F6DF37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7DED9F-67D8-41BD-A3B7-20409F6DF37F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB72D92B-3C52-45E0-90EA-C052DA4DA578}
+	EndGlobalSection
+EndGlobal
