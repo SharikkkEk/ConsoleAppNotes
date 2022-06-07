@@ -9,9 +9,7 @@ namespace ConsoleApp1
         public static List<string> Notes = new List<string>();
         public static void Main(string[] args)
         {
-
             Menu();
-
         }
         public static void Menu()
         {
