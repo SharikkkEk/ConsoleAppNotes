@@ -83,16 +83,31 @@ namespace ConsoleApp1
         }
         public static void SaveNote()
         {
-            System.IO.File.WriteAllLines("C:\\Users\\User\\source\\repos\\test.txt ", Notes);
-            Console.WriteLine("Сохранено в C:\\Users\\User\\source\\repos\test.txt");
+            try
+            {
+                System.IO.File.WriteAllLines("C:\\test.txt ", Notes);
+                Console.WriteLine("Сохранено в C:\\test.txt");
+            }
+            catch
+            {
+                Console.WriteLine("Ошибка!");
+            }
+            
         }
         public static void DownloadNote()
         {
-            FileStream stream = new FileStream("C:\\Users\\User\\source\\repos\\test.txt ", FileMode.Open);
-            StreamReader reader = new StreamReader(stream);
-            string str = reader.ReadToEnd();
-            stream.Close();
-            Notes.Add(str);
+            try
+            {
+                FileStream stream = new FileStream("C:\\test.txt ", FileMode.Open);
+                StreamReader reader = new StreamReader(stream);
+                string str = reader.ReadToEnd();
+                stream.Close();
+                Notes.Add(str);
+            }
+            catch
+            {
+                Console.WriteLine("Ошибка!!!");
+            }
         }
     }
 }
